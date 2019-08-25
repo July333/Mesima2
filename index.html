@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Random Users Client</title>
+    <link rel="stylesheet" href="Resources/bootstrap.min.css">
+    <link rel="stylesheet" href="Resources/style.css">
+    <script src="Resources/jquery-3.4.1.slim.min.js"></script>
+    <script src="Resources/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header class="container">
+        <h1>Random Users Client</h1>
+        <button id="gen" class="gen btn btn-info">Generate User</button>
+    </header>
+    <main id="myMain" class="container">
+    </main>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="myModalLabel">To change name or email:</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>name: <input id="modalN"></p>
+                    <p>email: <input id="modalEm"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="save" onclick="saveCh()">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='main.js'></script>
+</body>
+
+</html>

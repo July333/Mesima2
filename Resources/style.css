@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+    width: 100%;
+}
+.user{
+    float: left;
+    overflow: hidden;
+    padding: 5px;
+    margin: 30px;
+}
+.mImg{
+    padding-left: 10px;
+        max-width: 70%; 
+        max-height: auto; 
+}
